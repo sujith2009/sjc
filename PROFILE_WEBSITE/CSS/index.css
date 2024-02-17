@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.navbar-toggler {
+  color: white !important;
+  background-color: white !important;
+}
+
+/*----------------------*/
 img {
   width: 100px;
   height: 50px;
@@ -26,6 +32,7 @@ body {
 .navbar-nav .nav-item {
   font-size: 25px;
   padding: 1rem;
+
   color: #ffff !important;
 }
 .nav-link {
