@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  color: white !important;
+}
+.container-fluid {
+  background-color: black !important;
+  height: 60px;
+}
+.btn {
+  padding-left: 20px !important;
+  margin-left: 55px;
+  float: right !important;
+}
