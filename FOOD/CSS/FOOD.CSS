@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+}
+.navbar .container-fluid {
+}
+.navbar {
+  background-color: #be2a2a !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 99;
+}
+.navbar-brand img {
+  color: #fff !important;
+  background-color: #ffff !important;
+  border-radius: 50%;
+}
+.nav-link {
+  color: black !important;
+  font-size: 23px !important;
+  font-family: monospace;
+  margin-left: 10px !important;
+  color: #ffff !important;
+  font-weight: bold;
+}
+.nav-link:hover {
+  background-color: #fff;
+  color: black !important;
+  border-radius: 10%;
+}
+#btn {
+  background-color: #fff !important;
+  color: #fff !important;
+}
+.navbar-toggler-icon {
+  color: black !important;
+}
+
+.bi-cart {
+  font-size: 33px;
+  display: flex;
+  justify-content: end;
+  position: relative !important;
+  right: 0 !important;
+  margin-right: 10px;
+  color: #fff;
+}
+/*-------------------------------ABOUTUS PAGE-----------------------------*/
+.about {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.youtube {
+  font-size: 20px !important;
+}
+#order {
+}
+#order a {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+#youtube a {
+  padding: 10px 20px !important;
+  font-size: 20px;
+  color: #ffff;
+  border-radius: 50% !important;
+}
+.btn {
+  padding: 10px 30px;
+  color: #be2a2a;
+}
+.card img {
+}
+h1 {
+  font-size: 50px;
+}
+.Welcome {
+  font-size: 25px;
+  color: #be2a2a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.Delicious {
+  color: #be2a2a;
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 45px;
+  font-weight: bold;
+}
+#about-para {
+  text-align: justify !important;
+  color: #be2a2a;
+  font-weight: 600;
+}
+.card {
+  position: relative;
+}
+.card img {
+  object-fit: cover;
+}
+.card-text {
+  color: red;
+  font-weight: bold;
+  display: flex !important;
+}
+.stars {
+  color: yellow;
+  font-weight: bold;
+}
+.add {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  margin-top: -15px;
+}
+#a-img {
+  border-radius: 10px;
+}
+.col-md-6 {
+}
