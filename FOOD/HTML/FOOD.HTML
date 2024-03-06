@@ -56,10 +56,10 @@
               style="--bs-scroll-height: 100px"
             >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#about">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
+                <a class="nav-link" href="#carousel">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Services</a>
@@ -82,20 +82,22 @@
     </nav>
     <!--------------------------HOME PAGE------------------------------------>
 
-    <section class="about">
+    <section class="about" id="about">
+      
       <div class="container">
+       
         <div class="row">
           <div class="col-md-6">
             <h1 class="text"><span class="Welcome">Welcome</span>
-              <br>Enjoy your <br>
-              <span class="Delicious">Delicious </span>Food
+              <br><span style="color: #fff;font-weight: bold;font-size: 50px;">Enjoy your</span> <br>
+              <span class="Delicious">Delicious </span><span style="color: #fff;font-weight: bold;font-size: 50px;">Food</span>
             </h1>
             <p class="text" id="about-para">We will deliver your food within 30 minutes in your town ,if<br>
               we should fall,we will give the food free..
 
           </p>
           <div class="btn-groups">
-            <button class="btn btn-danger" id="order"><a href="../ORDER/ORDER.HTML">Order Now</a></button>
+            <button class="btn btn-danger" id="order"><a href="../ORDER/ORDER.HTML">Visit Menu</a></button>
            <a id="youtube" class="btn btn-danger px-4" class="youtube"
             href="https://youtu.be/69QoBQuvs1w?si=D08ugSevJ6NYXiy9" id="youtube"><i class="bi bi-youtube" style="font-size: 20px;"></i></a>
           </div>  
@@ -145,9 +147,33 @@
           <!------------------------------>
           </div>
           
-          <div class="col-md-6 g-2">
-           <img src="../IMAGES/burger.png" class="img-fluid" alt="..." id="a-img" width="600px" height="500px">
+          <div class="col-md-6 g-2 ps-5">
+        <img  src="../IMAGES/pngtree-chef-cook-burger-in-restaurant-png-image_11719287.png"
+            class="img-fluid ms-5" alt="..." 
+            id="a-img" width="290px" height="250px">
+           <div class="row py-3">
+            <div class="col-2">
+               <div class="bike">
+       <span>    <i class="bi bi-bicycle"></i><br><span class="fast-boy">Fast Delivers</span></span>
+            </div>
+            </div>
+            <div class="col">
+              <div class="pickup">
+              <i class="fa-solid fa-truck-pickup"></i><br>
+             <span class="pickup-to"> Pickup to deliver <br>within 30 minutes</span>
+            </div>
+            </div>
+            <div class="col pe-5">
+               <div class="dinner">
+              <i class="fa-solid fa-utensils"></i><br>
+              <span class="Enjoy">Enjoy your food</span>
+            </div>
+            </div>
+           </div>
           </div>
+         
+            
+        
 
         </div>
       </div>
@@ -155,8 +181,106 @@
     </section>
            
    
-     
-    
+     <!------------------------CAROUSEL SLIDER  --------------------------->
+   <section class="carousel-slider" id="carousel" id="menu">
+    <div class="container">
+      <h2 class="text text-danger text-center" id="Tasty">Tasty</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="carouselExample" class="carousel slide vh-100">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../IMAGES/s-1.jpg" class="d-block w-100" height="600px"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../IMAGES/s-2.jpg" class="d-block w-100" height="600px"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../IMAGES/s-3.jpg" class="d-block w-100" height="600px" alt="...">
+    </div>
+     <div class="carousel-item">
+      <img src="../IMAGES/back.jpg" class="d-block w-100" height="600px" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" style="color: #fff;" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:black;color: rgb(231, 229, 229);";></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+        <div class="col-md-6">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="../IMAGES/b5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Spicy Burger</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="../IMAGES/b6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Chicken Burger</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="../IMAGES/b7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Veg Burger</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="../IMAGES/b3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Mulicious Burger</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+          </div>
+      </div>
+    </div>
+
+   </section>
+    <!------------------MEDIA-------------------->
+    <section class="media" id="">
+      
+        <div class="card mb-3" style="max-width: 740px;height: 500px;">
+  <div class="row g-0 ">
+    <div class="col-md-3 col-lg-5 col-sm-3">
+      <img src="../IMAGES/back.jpg" class="img-fluid rounded-start" alt="..." style="height: 500px;"
+      style="width: 500px;"
+      
+      >
+    </div>
+    <div class="col-md-8 col-lg-6 col-sm-4">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text" id="visible">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, quis mollitia! Culpa at voluptatibus fugiat soluta omnis atque quo voluptatum unde quod pariatur animi, perspiciatis, mollitia temporibus sapiente eveniet reiciendis!
+          Quia, ut impedit. In distinctio earum itaque, perspiciatis autem repudiandae excepturi. Voluptates atque dignissimos dolor alias tempora cum officia ad facere beatae impedit. Recusandae officia illo dignissimos asperiores qui a.
+        </p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+    </section>
 
 <!------------------------------------------------------------------------->
     <script
