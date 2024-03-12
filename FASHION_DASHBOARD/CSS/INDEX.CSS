@@ -2,20 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
 }
+body {
+  background-color: rgb(153, 146, 146) !important;
+}
+/* Styles for the container */
 .container {
-}
-.lorem {
-  display: inline-block;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 7px;
+  padding: 20px;
 }
 
-section {
-  display: flex !important;
-  justify-content: center !important;
+/* Styles for the header */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
+
+/* Styles for the navigation */
+.lorem {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+
+.lorem span {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .lorem span {
+    width: 84px;
+    font-size: 16px;
+
+    text-align: center;
+    color: black;
+    overflow-x: hidden;
+  }
+}
+
 /*==================================CARD-------------------------------*/
 .card {
   position: relative;
@@ -24,10 +56,20 @@ section {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .card img {
-  height: 320px;
+  height: 350px;
   position: relative;
   transition: 0.5s;
 }
+#card-before::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(236, 234, 234);
+  width: 600px;
+  height: 600px;
+}
+
 .hover-images {
   position: absolute;
   bottom: -100%; /* Initially hide the hover images */
@@ -39,23 +81,23 @@ section {
 
   transition: bottom 0.3s ease; /* Add smooth transition */
 }
-.card .hover-images img :hover {
-}
+
 .hover-sizes {
   position: absolute;
-  top: -20%;
+  top: -30%;
   color: black;
   background-color: #fff;
   width: 100%;
   text-align: center;
 }
 .hover-sizes span {
+  font-size: 13px;
   margin-right: 28px;
 }
 .card:hover .hover-images {
   /* Show hover images on hover */
 
-  height: 90px;
+  height: 80px;
   bottom: 0;
   background-color: #ffff;
   cursor: pointer;
@@ -72,10 +114,6 @@ section {
   height: 70px;
 }
 
-section {
-  margin-bottom: 30px;
-}
-
 .bi-heart {
   top: 4%;
   color: black;
@@ -86,6 +124,9 @@ section {
   position: absolute;
   right: 0;
   font-size: 25px;
+}
+.bi-heart:hover {
+  color: rgb(255, 26, 26);
 }
 .rupees {
   color: red;
