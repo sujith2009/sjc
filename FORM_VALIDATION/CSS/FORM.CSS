@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #025b6f;
+  box-shadow: 0 10px 20px #fff, 0 6px 6px #fff !important;
+}
+input {
+  width: 100% !important;
+}
+.form {
+  background-color: white;
+}
