@@ -2,16 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none !important;
 }
 
 body {
-  background-color: rgb(230, 199, 199) !important;
+  background-color: black !important;
 }
 .navbar .container-fluid {
 }
 .navbar {
   background-color: #be2a2a !important;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   position: sticky !important;
   top: 0 !important;
   z-index: 99;
@@ -51,6 +52,11 @@ body {
   margin-right: 10px;
   color: #fff;
 }
+@media only screen and(max-width:520px) {
+  .container-fluid {
+    background-color: yellow !important;
+  }
+}
 /*-------------------------------ABOUTUS PAGE-----------------------------*/
 .about {
   display: flex;
@@ -63,7 +69,7 @@ body {
 #about {
   width: 100%;
   height: 100vh;
-  background-image: url("../IMAGES/back.jpg");
+  background-image: url("../IMAGES/briyani-abouts.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -215,5 +221,237 @@ button .carousel-control-prev-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 45vh;
+  background-color: #ffff;
+}
+.images-groups img {
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+/*--------------------TESTIMONAL-----------------------*/
+.testimonual {
+  background-color: #191919;
+  position: relative;
+}
+.testimonual .container .carousel-inner {
+  padding: 6rem;
+}
+.carousel-image {
+  border-radius: 50% !important;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 37%;
+  margin-bottom: 80px;
+}
+.carousel-caption p {
+}
+.carousel-imagev p .bi-quote {
+}
+.carousel-caption {
+  position: absolute;
+}
+.carousel-caption h4 {
+  position: absolute;
+  left: 44%;
+  top: -240%;
+  font-size: 40px;
+  font-family: serif;
+}
+.carousel-caption p {
+  position: relative;
+  top: 40%;
+  display: flex;
+  justify-content: baseline;
+}
+button .carousel-control-next {
+  color: red !important;
+  background-color: black !important;
+}
+/* .testimonual .container .card h2 p {
+  color: #ffff !important;
+}s
+#test-img {
+  border-radius: 50%;
+  position: relative;
+  left: 12%;
+}
+.carousel-item p {
+  text-align: justify;
+}
+.testimonual .card {
+  background-color: #ffff !important;
+}
+.card {
+  box-shadow: 0 3px 6px rgba(231, 231, 230, 0.966),
+    0 3px 6px rgba(243, 241, 241, 0.966);
+} */
+/*==============================FOOTER====================*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+
+  background-color: #f0eeee;
+}
+
+.footer-head .for-party h2 {
+  font-size: 50px !important;
+  color: #fff;
+  font-weight: bold;
+}
+#footer-btn {
+  background-color: #191919;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px 23px;
+}
+.footer-head .footer-para {
+  font-size: 20px;
+  color: #b61313;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.footer #footer-btn:hover {
+  background-color: yellow !important;
+  color: black !important;
+}
+.footer #footer-btn a:hover {
+  color: black !important;
+}
+/*================================FOOTER TWO========================*/
+.footer-part-two {
+  display: flex;
+  justify-content: center;
+}
+.footer-cin {
+  color: #fff;
+}
+.footer-gst {
+  color: #fff;
+}
+.bi-building {
+  padding-right: 4px;
+  font-size: 20px;
+}
+.build {
+  color: #fff;
+}
+
+.street {
+  color: #ffff;
+}
+.street .bi-signpost {
+  color: #fff;
+  font-size: 20px;
+}
+.telephone {
+  color: #ffff;
+}
+.telephone .bi-telephone-plus {
+  padding-right: 3px;
+}
+.mail .bi-envelope-at {
+  padding-right: 3px;
+  color: #fff;
+}
+.time {
+  display: flex !important;
+  flex-direction: column !important;
+  color: #fff;
+  font-size: 20px;
+}
+.media-icons {
+  color: #fff;
+  font-size: 30px;
+}
+
+/*-----------LOGIN-----------------*/
+.login button {
+  background-color: red !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.login button a {
+  text-decoration: none !important;
+  font-weight: 600;
+  color: white !important;
+  font-family: sans-serif;
+}
+
+/*===================CATR===============*/
+#cart-design {
+}
+
+/*==================MEDIA QUERIES ON MEDIA 4 IMAGES================*/
+@media (max-width: 768px) {
+  .images-groups .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .images-groups .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* Default styles */
+
+/* Example of media query for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  /* Adjust styles for tablets */
+  .about {
+    padding: 50px;
+  }
+
+  .carousel-slider {
+    padding: 50px;
+  }
+
+  .media {
+    padding: 50px;
+  }
+
+  .testimonual {
+    padding: 50px;
+  }
+
+  .footer {
+    padding: 50px;
+  }
+
+  .footer-part-two {
+    padding: 50px;
+  }
+}
+
+/* Example of media query for desktops (min-width: 992px) */
+@media (min-width: 992px) {
+  /* Adjust styles for desktops */
+  .about {
+    padding: 100px;
+  }
+
+  .carousel-slider {
+    padding: 100px;
+  }
+
+  .media {
+    padding: 100px;
+  }
+
+  .testimonual {
+    padding: 100px;
+  }
+
+  .footer {
+    padding: 100px;
+  }
+
+  .footer-part-two {
+    padding: 100px;
+  }
 }

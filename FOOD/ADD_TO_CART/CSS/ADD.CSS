@@ -9,10 +9,9 @@ h2 {
   color: #fff !important;
 }
 body {
-  background-color: #191919 !important;
+  /* background-color: #191919 !important; */
 }
 .navbar .container-fluid {
-  /* width: 80% !important; */
 }
 .navbar {
   background-color: #be2a2a !important;
@@ -20,8 +19,6 @@ body {
   position: sticky !important;
   top: 0 !important;
   z-index: 99;
-  width: 90% !important;
-  position: relative;
 }
 .navbar-brand img {
   color: #fff !important;
@@ -48,85 +45,81 @@ body {
 .navbar-toggler-icon {
   color: black !important;
 }
-
-.bi-cart {
-  font-size: 33px;
+/*==========================ADD TO CART=======================*/
+.abouts-page {
   display: flex;
-  justify-content: end;
-  position: relative !important;
-  right: 0 !important;
-  margin-right: 10px;
-  color: #fff;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: black !important;
 }
-.card-number {
-  position: absolute;
-  top: -70%;
-  right: 10%;
+.abouts-page .images img {
+  border-radius: 10% !important;
 }
-.card {
-  position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  transform: 0.1s !important;
+.abouts-page .bi-check-circle-fill {
+  color: rgb(33, 224, 33) !important;
+  font-size: 20px !important;
+}
+.abouts-page .col-md-6 {
+  background-color: yellow !important;
 }
 
-.card img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
+.processed-to-buy {
+  display: flex !important;
+  justify-content: center;
+  position: relative;
 }
-.card-title {
-  color: #be2a2a !important;
-  font-weight: bold;
-  font-size: 25px !important;
+.col-md-4 {
+  display: flex !important;
+  flex-direction: column !important;
 }
-.card-text {
-  color: #be2a2a;
-  font-weight: bold;
+.processed-to-buy #pro-btn {
+  position: absolute;
+  top: 80%;
+  padding: 10px 5px !important;
+  font-size: 15px !important;
 }
-.stars {
-  display: inline-block;
-  color: yellow;
-  font-weight: bold;
+.processed-to-buy #go-to-cart {
+  position: absolute;
+  top: 240%;
+}
+
+/*=========================CARD SLIDER================*/
+body {
+  background-color: black !important;
+}
+.container {
+}
+.card-slider .container .carousel-inner .card img {
+  width: 285px !important;
+  height: 240px !important;
+}
+.card-slider .container .carousel-inner .card {
+  margin-left: 20px !important;
+}
+.carousel-control-prev-icon {
+  background-color: red !important;
+}
+.carousel-control-next-icon {
+  background-color: rgb(240, 19, 19) !important;
+}
+
+.card .card-body .card-title {
+  text-align: center;
+}
+.card .card-body .card-text {
+  color: black !important;
   font-size: 20px;
 }
-.add {
-  position: absolute;
-  right: 0;
-  color: #be2a2a;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -13px;
-}
-/*=====================ABOUT US=================*/
-.about {
-}
-/*===================SIDEBAR================*/
-#sidebar-wrapper {
-  margin-top: -126px !important;
-  margin-right: 3px !important;
-  height: 100vh;
-  position: fixed !important;
-  right: 0 !important ;
-}
-.side-content {
-}
-/* .side-content-active {
-  display: none;
-  background-color: red;
-} */
-/*=============ADD TO CART======================*/
-button a {
-  text-decoration: none !important;
-  color: black !important;
+.card-slider {
 }
 
 /*================================FOOTER TWO========================*/
 .footer-part-two {
-  padding: 30px 20px;
   display: flex;
   justify-content: center;
- background-color: #be2a2a;
+  background-color: #be2a2a;
+  padding: 40px 0px;
 }
 .footer-cin {
   color: #fff;
@@ -168,4 +161,13 @@ button a {
 .media-icons {
   color: #fff;
   font-size: 30px;
+}
+
+@media screen and (max-width: 412px) {
+  .card {
+    margin-right: 40px !important;
+    margin-left: auto !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

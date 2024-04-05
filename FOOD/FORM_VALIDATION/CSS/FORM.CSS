@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #025b6f; */
+
+  box-shadow: 0 10px 20px #fff, 0 6px 6px #fff !important;
+  background-image: url("../IMAGES/s-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+section h3 {
+  color: #fff;
+}
+section h5 {
+  color: #fff;
+}
+label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffff !important;
+}
+input {
+  width: 100% !important;
+}
+button {
+  background-color: red !important;
+  border: none !important;
+  outline: none !important;
+}
+.form {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(55px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.mb-3-sucess input {
+  border-color: rgba(33, 255, 63, 0.664);
+}
+.mb-3-error input {
+  border-color: rgba(211, 23, 54, 0.884) !important;
+}
+.required-alert-active {
+  color: red;
+}
+.p-active {
+  border-color: red !important;
+}

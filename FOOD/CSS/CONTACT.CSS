@@ -2,26 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
+  text-decoration: none !important;
+  list-style-type: none !important;
 }
-h2 {
-  color: #fff !important;
-}
+
 body {
-  background-color: #191919 !important;
+  background-color: black !important;
 }
 .navbar .container-fluid {
-  /* width: 80% !important; */
 }
 .navbar {
   background-color: #be2a2a !important;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   position: sticky !important;
   top: 0 !important;
   z-index: 99;
-  width: 90% !important;
-  position: relative;
 }
 .navbar-brand img {
   color: #fff !important;
@@ -57,76 +51,74 @@ body {
   right: 0 !important;
   margin-right: 10px;
   color: #fff;
-  position: relative;
 }
-.card-number {
-  position: absolute;
-  top: -70%;
-  right: 10%;
-}
-.card {
-  position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  transform: 0.1s !important;
+@media only screen and(max-width:520px) {
+  .container-fluid {
+    background-color: yellow !important;
+  }
 }
 
-.card img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-}
-.card-title {
-  color: #be2a2a !important;
-  font-weight: bold;
-  font-size: 25px !important;
-}
-.card-text {
-  color: #be2a2a;
-  font-weight: bold;
-}
-.stars {
-  display: inline-block;
-  color: yellow;
-  font-weight: bold;
-  font-size: 20px;
-}
-.add {
-  position: absolute;
-  right: 0;
-  color: #be2a2a;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -13px;
-}
-/*=====================ABOUT US=================*/
-.about {
-}
-/*===================SIDEBAR================*/
-#sidebar-wrapper {
-  margin-top: -126px !important;
-  margin-right: 3px !important;
-  height: 100vh;
-  position: fixed !important;
-  right: 0 !important ;
-}
-.side-content {
-}
-/* .side-content-active {
-  display: none;
-  background-color: red;
-} */
-/*=============ADD TO CART======================*/
-button a {
-  text-decoration: none !important;
-  color: black !important;
-}
-
-/*================================FOOTER TWO========================*/
-.footer-part-two {
-  padding: 30px 20px;
+/*=================CONTACT US PAGE DESIGN ================*/
+.contact-design {
   display: flex;
   justify-content: center;
- background-color: #be2a2a;
+  align-items: center;
+  height: 60vh;
+  background-color: black;
+}
+.header_head h4 {
+  letter-spacing: 1px;
+}
+.contact-design .container {
+  margin-top: 30px;
+  padding: 40px 0px;
+}
+.contact-design .container .para_head {
+  font-family: serif;
+  font-size: 20px;
+  color: #ffff;
+}
+.contact-design .container button {
+  padding: 8px 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 18 px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.contact-design .container h1 {
+  font-size: 60px;
+}
+.app-icons a {
+  font-size: 25px;
+  margin-right: 9px;
+  color: #ffff !important;
+}
+
+.maps_google {
+  margin-top: 30px !important;
+}
+.address {
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 400;
+}
+
+.down_arrow .bi-arrow-down {
+  font-size: 60px;
+  font-weight: 600;
+}
+.header a {
+  color: #fff;
+}
+
+/*=========================*/
+.footer-part-two {
+  display: flex;
+  justify-content: center;
+  background-color: #be2a2a;
+  padding: 30px 20px;
+  margin-top: 30px;
 }
 .footer-cin {
   color: #fff;
